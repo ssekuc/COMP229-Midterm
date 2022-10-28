@@ -1,3 +1,9 @@
+// books.js
+// Sami Sekucoglu
+// 301206417
+// Booklist app - Midterm
+
+// SCHEMA ADDED
 import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 

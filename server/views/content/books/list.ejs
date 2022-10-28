@@ -1,12 +1,16 @@
+<%#
+list.ejs
+Sami Sekucoglu
+301206417
+Booklist app - Midterm
+%>
 <main class="container">
     <div class="row">
         <div class="offset-md-1 col-md-11">
             <h1>
                 <%= title %>
             </h1>
-            <!-- ------------------------ -->
-            <!-- FIX THE ADD BUTTON BELOW -->
-            <!-- ------------------------ -->
+            <!-- ADD BUTTON ADDED -->
             <a href="add" class="btn btn-primary" role="button">
                 <i class="fas fa-plus-circle"></i> Add a Book</a>
             <br>
@@ -42,17 +46,13 @@
                             <%= books[count].price %>
                         </td>
                         <td class="text-center col-1">
-                            <!-- ------------------------ -->
-                            <!-- ADD the EDIT BUTTON HERE -->
-                            <!-- ------------------------ -->
+                            <!-- EDIT BUTTON ADDED -->
                             <a href="/books/edit/<%= books[count]._id %> "
                                 class="btn btn-primary btn-sm">
                             <i class="fas fa-pencil-alt"></i>Edit</a>
                         </td>
                         <td class="text-center col-1">
-                            <!-- ------------------------ -->
-                            <!-- ADD the DELETE BUTTON HERE -->
-                            <!-- ------------------------ -->
+                            <!-- DELETE BUTTON ADDED -->
                             <a href="/books/delete/<%= books[count]._id %> "
                                 class="btn btn-danger btn-sm">
                             <i class="fas fa-pencil-alt"></i>Delete</a>
