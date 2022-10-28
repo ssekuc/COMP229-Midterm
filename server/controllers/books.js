@@ -2,7 +2,6 @@
 import booksModel from '../models/books.js';
 
 import { UserDisplayName } from '../utils/index.js';
-
 /* GET books List page. READ */
 export function displayBookList(req, res, next) {
     // find all books in the books collection
@@ -72,9 +71,9 @@ export function processEditPage(req, res, next) {
     /*****************
     * ADD CODE HERE *
     *****************/
-     let id = req.params.id;
-
-     let newBook = booksModel({
+    let id = req.params.id;
+    
+    let newBook = ({
         _id: req.body.id,
         name: req.body.name,
         author: req.body.author,
@@ -90,7 +89,7 @@ export function processEditPage(req, res, next) {
         };
 
         res.redirect('/books/list')
-    })
+    } )
 }
 
 // GET - process the delete by user id
